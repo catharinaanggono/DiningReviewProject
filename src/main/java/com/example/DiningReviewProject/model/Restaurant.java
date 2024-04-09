@@ -4,13 +4,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;  
 import lombok.Setter;  
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.Table;
+import jakarta.persistence.Entity;
+import org.springframework.stereotype.Component;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import jakarta.persistence.Table;
 
 @Entity
+// @Component
 @Getter @Setter @NoArgsConstructor
 @Table(name="RESTAURANT") 
 public class Restaurant {
