@@ -4,8 +4,6 @@ import java.lang.Iterable;
 import java.util.Optional;
 
 import org.springframework.web.bind.annotation.*;
-// import org.springframework.web.bind.annotation.GetMapping;
-// import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;
 import com.example.DiningReviewProject.model.Users;

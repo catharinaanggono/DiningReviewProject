@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Column;
 import jakarta.persistence.Table;
 
-import org.springframework.stereotype.Component;
+// import org.springframework.stereotype.Component;
 // import org.springframework.boot.autoconfigure.domain.Entity;
 // @Component
 // @EntityScan

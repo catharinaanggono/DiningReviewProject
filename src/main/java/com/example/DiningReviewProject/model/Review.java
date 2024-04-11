@@ -21,22 +21,46 @@ public class Review {
 
     @Column(name="RESTAURANT_ID")
     @NotNull
-    private String restaurantId;
+    private Long restaurantId;
 
     @Column(name="USERNAME")
     @NotNull
     private String username;
 
     @Column(name="PEANUT_SCORE")
-    private int peanutScore;
+    private Integer peanutScore;
     @Column(name="EGG_SCORE")
-    private int eggScore;
+    private Integer eggScore;
     @Column(name="DAIRY_SCORE")
-    private int dairyScore;
+    private Integer dairyScore;
 
     @Column(name="COMMENTARY")
     private String commentary;
 
-    @Column(name="STATUS")
-    private String status;
+    @Column(name="APPROVAL_STATUS", columnDefinition="boolean default false")
+    private Boolean approvalStatus;
+
+    public Long getRestaurantId(){
+        return this.restaurantId;
+    };
+
+    public Integer getPeanutScore(){
+        return this.peanutScore;
+    };
+
+    public Integer getEggScore(){
+        return this.eggScore;
+    };
+
+    public Integer getDairyScore(){
+        return this.dairyScore;
+    };
+
+    public Boolean getApprovalStatus(){
+        return this.approvalStatus;
+    };
+
+    public void setApprovalStatus(Boolean newStatus){
+        this.approvalStatus = newStatus;
+    };
 }

@@ -30,17 +30,41 @@ public class Restaurant {
     @Column(name="STATE")
     private String state;
     @Column(name="ZIPCODE")
-    private int zipcode;
+    private Integer zipcode;
 
     @Column(name="PHONE")
-    private int phone;
+    private Integer phone;
 
-    @Column(name="OVERALL_RATING")
-    private int overallRating;
-    @Column(name="PEANUT_SCORE")
-    private int peanutScore;
-    @Column(name="EGG_SCORE")
-    private int eggScore;
-    @Column(name="DAIRY_SCORE")
-    private int dairyScore;
+    @Column(name="OVERALL_RATING", columnDefinition = "float default 0.0")
+    private Float overallRating;
+    @Column(name="PEANUT_SCORE", columnDefinition = "float default 0.0")
+    private Float peanutScore;
+    @Column(name="EGG_SCORE", columnDefinition = "float default 0.0")
+    private Float eggScore;
+    @Column(name="DAIRY_SCORE", columnDefinition = "float default 0.0")
+    private Float dairyScore;
+
+    public String getName(){
+        return this.name;
+    }
+
+    public Integer getZipcode(){
+        return this.zipcode;
+    }
+
+    public void setOverallRating(Float overallRating){
+        this.overallRating = overallRating;
+    }
+
+    public void setPeanutScore(Float peanutScore){
+        this.peanutScore = peanutScore;
+    }
+
+    public void setEggScore(Float eggScore){
+        this.eggScore = eggScore;
+    }
+
+    public void setDairyScore(Float dairyScore){
+        this.dairyScore = dairyScore;
+    }
 }
